@@ -4,6 +4,8 @@ const puppeteer = require("puppeteer-core");
 const app = express();
 app.use(express.json());
 
+app.use("/ads", adsRoute);
+
 app.post("/scrape", async (req, res) => {
   const { url } = req.body;
 
