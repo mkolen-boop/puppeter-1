@@ -1,5 +1,5 @@
-import express from "express";
-import puppeteer from "puppeteer-core";
+const express = require("express");
+const puppeteer = require("puppeteer-core");
 
 const app = express();
 app.use(express.json());
