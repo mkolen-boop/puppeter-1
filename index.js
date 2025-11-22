@@ -1,7 +1,8 @@
 const express = require("express");
 const puppeteer = require("puppeteer-core");
-
+const adsRoute = require("./ads");
 const app = express();
+
 app.use(express.json());
 
 app.use("/ads", adsRoute);
